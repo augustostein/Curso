@@ -1,8 +1,8 @@
-package cursodevsyonet;
+package cursodevsyonet.desafio01;
 
 import java.util.Scanner;
 
-public class Exercicio02SomaPares {
+public class Exercicio02SomaImpar {
     public static void main(String[] args) {
 
         Scanner teclado = new Scanner(System.in);
@@ -11,10 +11,10 @@ public class Exercicio02SomaPares {
         int soma = 0;
 
         for (int i = 0; i <= total; i++) {
-            if (i % 2 == 0) {
+            if (i % 2 != 0) {
                 soma = soma + i;
             }
         }
-        System.out.println("A soma total dos números pares é: " + soma);
+        System.out.println("A soma total dos números impares é: " + soma);
     }
 }

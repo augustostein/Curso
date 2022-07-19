@@ -1,4 +1,4 @@
-package cursodevsyonet;
+package cursodevsyonet.desafio01;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ public class Exercicio04 {
             Scanner teclado = new Scanner(System.in);
             System.out.println("Digite um número maior ou igual a 1: ");
             int numero = 0;
-            while (numero < 1) {
+            while (numero <= 1) {
                 numero = teclado.nextInt();
             }
 
@@ -30,3 +30,12 @@ public class Exercicio04 {
         }
     }
 }
+
+
+//        for (int i = 2; i < numero; i++){
+//        if(numero % i == 0){
+//        return false;
+//        }
+//      }
+//        return true;
+//   }
