@@ -1,4 +1,4 @@
-package cursodevsyonet.desafio02;
+package cursodevsyonet.desafio02.exercicio01;
 
 public class Casa extends Imovel {
 
@@ -11,7 +11,6 @@ public class Casa extends Imovel {
         this.areaTerreno = areaTerreno;
 
     }
-
 
     public Integer getNumeroDeComodos() {
         return numeroDeComodos;
@@ -31,7 +30,6 @@ public class Casa extends Imovel {
 
     @Override
     public String toString() {
-
 
         return "\nCasa: \n" + super.toString()
                 + "\n Número de Comodos: " + this.getNumeroDeComodos()

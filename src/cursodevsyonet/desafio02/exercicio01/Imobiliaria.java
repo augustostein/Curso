@@ -1,4 +1,4 @@
-package cursodevsyonet.desafio02;
+package cursodevsyonet.desafio02.exercicio01;
 
 import java.util.ArrayList;
 import java.util.List;

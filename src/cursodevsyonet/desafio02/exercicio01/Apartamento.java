@@ -1,6 +1,7 @@
-package cursodevsyonet.desafio02;
+package cursodevsyonet.desafio02.exercicio01;
 
 public class Apartamento extends Imovel {
+
     private Integer numeroDeComodos;
     private Boolean possuiSalaoDeFestas;
 

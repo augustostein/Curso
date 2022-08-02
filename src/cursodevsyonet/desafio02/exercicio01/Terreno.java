@@ -1,6 +1,7 @@
-package cursodevsyonet.desafio02;
+package cursodevsyonet.desafio02.exercicio01;
 
 public class Terreno extends Imovel {
+
     public Terreno(Double valorVenda, Double areaImovel) {
         super(valorVenda, areaImovel);
     }
