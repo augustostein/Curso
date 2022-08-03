@@ -34,17 +34,16 @@ public class Main {
         concecionaria.adicionaCaminhao("Caçamba", 742, 14, 25000., "Azul", 2020, "VN", "Numsei", "Usado", 730.000);
         concecionaria.adicionaCaminhao("Caçamba", 12, 1, 35000., "Azul", 2022, "VN", "Numsei", "Novo", 90.000);
 
-        //graneleiro, baú, baú frigorificado, plataforma, tanque e caçamba;
 
-        //concecionaria.alteraPreço("Gol", 75.000);
+        concecionaria.alteraPreço("Gol", 75.000);
 
-//        concecionaria.listaNovosUsadosAmbos("Novo");
-//        concecionaria.listaNovosUsadosAmbos("Usado");
-//        concecionaria.listaNovosUsadosAmbos("Ambos");
+        concecionaria.listaNovosUsadosAmbos("Novo");
+        concecionaria.listaNovosUsadosAmbos("Usado");
+        concecionaria.listaNovosUsadosAmbos("Ambos");
 
         System.out.println("------------------------------------");
 
-        //concecionaria.listaMarca("Yamaha");
+        concecionaria.listaMarca("Yamaha");
         concecionaria.listaCilindradas(600, "Honda");
 
         concecionaria.tiposDeCarrocerias("Baú frigorificado");
