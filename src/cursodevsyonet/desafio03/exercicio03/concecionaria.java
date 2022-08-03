@@ -6,13 +6,16 @@ import java.util.List;
 public class concecionaria {
 
     List<Veiculos> veiculosLista = new ArrayList<>();
+    List<Motos> motosLista = new ArrayList<>();
+    List<Carros> carrosLista = new ArrayList<>();
+    List<Caminhoes> caminhoesLista = new ArrayList<>();
 
     public void adicionaCarro(Integer quantidadeRodas, Double pesoVeiculo, String cor, Integer ano, String marcaVeiculo, String modeloVeiculo, String novoUsado, Double valorVendaVeiculo) {
 
         Carros carros = new Carros(quantidadeRodas, pesoVeiculo, cor, ano, marcaVeiculo, modeloVeiculo, novoUsado, valorVendaVeiculo);
 
         veiculosLista.add(carros);
-
+        carrosLista.add(carros);
     }
 
     public void adicionaCaminhao(String tipoDeCarroceria, Integer quantidadeEixo, Integer quantidadeRodas, Double pesoVeiculo, String cor, Integer ano, String marcaVeiculo, String modeloVeiculo, String novoUsado, Double valorVendaVeiculo) {
@@ -20,7 +23,7 @@ public class concecionaria {
         Caminhoes caminhoes = new Caminhoes(tipoDeCarroceria, quantidadeEixo, quantidadeRodas, pesoVeiculo, cor, ano, marcaVeiculo, modeloVeiculo, novoUsado, valorVendaVeiculo);
 
         veiculosLista.add(caminhoes);
-
+        caminhoesLista.add(caminhoes);
     }
 
     public void adicionaMoto(Integer cilindradas, Integer quantidadeRodas, Double pesoVeiculo, String cor, Integer ano, String marcaVeiculo, String modeloVeiculo, String novoUsado, Double valorVendaVeiculo) {
@@ -28,6 +31,7 @@ public class concecionaria {
         Motos motos = new Motos(cilindradas, quantidadeRodas, pesoVeiculo, cor, ano, marcaVeiculo, modeloVeiculo, novoUsado, valorVendaVeiculo);
 
         veiculosLista.add(motos);
+        motosLista.add(motos);
     }
 
     public void alteraPreço(String modelo, Double preco) {
@@ -42,6 +46,13 @@ public class concecionaria {
     public void listaTodosCarro() {
         for (Veiculos veiculo : veiculosLista) {
             System.out.println(veiculo);
+
+        }
+    }
+
+    public void listatodasMotos() {
+        for (Motos moto : motosLista) {
+            System.out.println(moto);
 
         }
     }
@@ -68,6 +79,31 @@ public class concecionaria {
                 break;
         }
     }
+
+    public void listaMarca(String marca) {
+        for (Veiculos veiculo : veiculosLista) {
+            if (veiculo.getMarcaVeiculo() == marca)
+                System.out.println(veiculo);
+
+        }
+    }
+
+    public void listaCilindradas(Integer cilindradas, String marcaMoto) {
+        for (Motos moto : motosLista) {
+            if (moto.getCilindradas() == cilindradas) {
+                System.out.println(moto);
+            }
+        }
+    }
+
+    public void tiposDeCarrocerias(String tipoDeCarroceria){
+        for (Caminhoes caminhao : caminhoesLista){
+            if (caminhao.getTipoDeCarroceria() == tipoDeCarroceria){
+                System.out.println(caminhao);
+            }
+        }
+    }
+
 }
 
 

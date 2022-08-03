@@ -29,7 +29,7 @@ public class Caminhoes extends Veiculos {
 
     @Override
     public String toString() {
-        return "\n---- Caminhão ----: \n\n"
+        return "\n---- Caminhão ---- \n\n"
                 + super.toString()
 
                 + "\nTipo de carroceria: " + getTipoDeCarroceria()

@@ -8,7 +8,7 @@ public class Carros extends Veiculos {
 
     @Override
     public String toString() {
-        return "\n---- Carro ----: \n\n"
+        return "\n---- Carro ---- \n\n"
                 + super.toString();
 //
 //                + "\nQuantidade de Rodas: " + getQuantidadeRodas()
