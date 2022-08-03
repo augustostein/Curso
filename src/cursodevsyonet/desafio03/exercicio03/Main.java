@@ -41,7 +41,7 @@ public class Main {
         concecionaria.listaNovosUsadosAmbos("Usado");
         concecionaria.listaNovosUsadosAmbos("Ambos");
 
-        System.out.println("------------------------------------");
+
 
         concecionaria.listaMarca("Yamaha");
         concecionaria.listaCilindradas(600, "Honda");
