@@ -35,10 +35,10 @@ public class Main {
         concecionaria.adicionaCaminhao("Caçamba", 742, 14, 25000., "Azul", 2020, "VN", "Numsei", "Usado", 730.000);
         concecionaria.adicionaCaminhao("Caçamba", 12, 1, 35000., "Azul", 2022, "VN", "Numsei", "Novo", 90.000);
 
-//        // 2. Atualização do preço de venda de um veículo;
+        // 2. Atualização do preço de venda de um veículo;
         concecionaria.alteraPreço("Gol", 75.000);
-//
-//        // 3. Listagem dos carros onde o cliente pode definir se quer ver apenas novos, apenas seminovos ou ambos;
+
+        // 3. Listagem dos carros onde o cliente pode definir se quer ver apenas novos, apenas seminovos ou ambos;
         concecionaria.listaNovosUsadosAmbos("Novo");
         concecionaria.listaNovosUsadosAmbos("Usado");
         concecionaria.listaNovosUsadosAmbos("Ambos");
@@ -47,17 +47,17 @@ public class Main {
         // 4. Listagem das motos por marca e cilindrada;
         concecionaria.listaMarca("Yamaha");
         concecionaria.listaCilindradas(600);
-//
-//        // 5. Listagem dos caminhões por tipo de carroceria: graneleiro, baú, baú frigorificado, plataforma, tanque e caçamba;
+
+        // 5. Listagem dos caminhões por tipo de carroceria: graneleiro, baú, baú frigorificado, plataforma, tanque e caçamba;
         concecionaria.tiposDeCarrocerias("Graneleiro");
         concecionaria.tiposDeCarrocerias("Baú");
         concecionaria.tiposDeCarrocerias("Baú frigorificado");
         concecionaria.tiposDeCarrocerias("Plataforma");
         concecionaria.tiposDeCarrocerias("Tanque");
         concecionaria.tiposDeCarrocerias("Caçamba");
-//
-//        // 6. Venda de um veículo, onde clientes do tipo PCD possuem 50% de desconto, clientes do tipo agricultor possuem 40% e demais clientes sem desconto.
-//
+
+        // 6. Venda de um veículo, onde clientes do tipo PCD possuem 50% de desconto, clientes do tipo agricultor possuem 40% e demais clientes sem desconto.
+
 
 
     }
