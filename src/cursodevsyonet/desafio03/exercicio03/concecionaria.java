@@ -6,16 +6,15 @@ import java.util.List;
 public class concecionaria {
 
     List<Veiculos> veiculosLista = new ArrayList<>();
-    List<Motos> motosLista = new ArrayList<>();
-    List<Carros> carrosLista = new ArrayList<>();
-    List<Caminhoes> caminhoesLista = new ArrayList<>();
+//    List<Motos> motosLista = new ArrayList<>();
+//    List<Carros> carrosLista = new ArrayList<>();
+//    List<Caminhoes> caminhoesLista = new ArrayList<>();
 
     public void adicionaCarro(Integer quantidadeRodas, Double pesoVeiculo, String cor, Integer ano, String marcaVeiculo, String modeloVeiculo, String novoUsado, Double valorVendaVeiculo) {
 
         Carros carros = new Carros(quantidadeRodas, pesoVeiculo, cor, ano, marcaVeiculo, modeloVeiculo, novoUsado, valorVendaVeiculo);
 
         veiculosLista.add(carros);
-        carrosLista.add(carros);
     }
 
     public void adicionaCaminhao(String tipoDeCarroceria, Integer quantidadeEixo, Integer quantidadeRodas, Double pesoVeiculo, String cor, Integer ano, String marcaVeiculo, String modeloVeiculo, String novoUsado, Double valorVendaVeiculo) {
@@ -23,7 +22,6 @@ public class concecionaria {
         Caminhoes caminhoes = new Caminhoes(tipoDeCarroceria, quantidadeEixo, quantidadeRodas, pesoVeiculo, cor, ano, marcaVeiculo, modeloVeiculo, novoUsado, valorVendaVeiculo);
 
         veiculosLista.add(caminhoes);
-        caminhoesLista.add(caminhoes);
     }
 
     public void adicionaMoto(Integer cilindradas, Integer quantidadeRodas, Double pesoVeiculo, String cor, Integer ano, String marcaVeiculo, String modeloVeiculo, String novoUsado, Double valorVendaVeiculo) {
@@ -31,13 +29,12 @@ public class concecionaria {
         Motos motos = new Motos(cilindradas, quantidadeRodas, pesoVeiculo, cor, ano, marcaVeiculo, modeloVeiculo, novoUsado, valorVendaVeiculo);
 
         veiculosLista.add(motos);
-        motosLista.add(motos);
     }
 
     public void alteraPreço(String modelo, Double preco) {
 
         for (Veiculos veiculo : veiculosLista) {
-            if (veiculo.getModeloVeiculo() == modelo) {
+            if (veiculo.getModeloVeiculo().equals(modelo)) {
                 veiculo.setvalorVendaVeiculo(preco);
             }
         }
@@ -50,12 +47,6 @@ public class concecionaria {
         }
     }
 
-    public void listatodasMotos() {
-        for (Motos moto : motosLista) {
-            System.out.println(moto);
-
-        }
-    }
 
     public void listaNovosUsadosAmbos(String tipoVeiculo) {
         switch (tipoVeiculo) {
@@ -64,7 +55,7 @@ public class concecionaria {
             case "Usado":
 
                 for (Veiculos veiculo : veiculosLista) {
-                    if (veiculo.getNovoUsado() == tipoVeiculo) {
+                    if (veiculo.getNovoUsado().equals(tipoVeiculo)) {
                         System.out.println(veiculo);
 
                     }
@@ -82,24 +73,40 @@ public class concecionaria {
 
     public void listaMarca(String marca) {
         for (Veiculos veiculo : veiculosLista) {
-            if (veiculo.getMarcaVeiculo() == marca)
+            if (veiculo.getMarcaVeiculo().equals(marca))
                 System.out.println(veiculo);
 
         }
     }
 
-    public void listaCilindradas(Integer cilindradas, String marcaMoto) {
-        for (Motos moto : motosLista) {
-            if (moto.getCilindradas() == cilindradas) {
-                System.out.println(moto);
+    public void listaCilindradas(Integer cilindradas) {
+        for (Veiculos veiculo : veiculosLista) {
+            if (veiculo instanceof Motos) {
+                Motos motoAtual = (Motos)veiculo;
+                if (motoAtual.getCilindradas().equals(cilindradas)) {
+                    System.out.println(motoAtual.toString());
+
+                }
             }
         }
     }
 
-    public void tiposDeCarrocerias(String tipoDeCarroceria){
-        for (Caminhoes caminhao : caminhoesLista){
-            if (caminhao.getTipoDeCarroceria() == tipoDeCarroceria){
-                System.out.println(caminhao);
+    public void tiposDeCarrocerias(String tipoDeCarroceria) {
+        for (Veiculos veiculo : veiculosLista) {
+            if (veiculo instanceof Caminhoes) {
+                Caminhoes caminhaoAtual = (Caminhoes) veiculo;
+                if (caminhaoAtual.getTipoDeCarroceria().equals(tipoDeCarroceria)) {
+                    System.out.println(caminhaoAtual);
+                }
+
+            }
+        }
+    }
+
+    public void descondoPessoaPCD(String tipoCliente) {
+        for (Veiculos veiculo : veiculosLista) {
+            if (tipoCliente == "PCD") {
+                System.out.println();
             }
         }
     }
