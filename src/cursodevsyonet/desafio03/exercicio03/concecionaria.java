@@ -6,9 +6,7 @@ import java.util.List;
 public class concecionaria {
 
     List<Veiculos> veiculosLista = new ArrayList<>();
-//    List<Motos> motosLista = new ArrayList<>();
-//    List<Carros> carrosLista = new ArrayList<>();
-//    List<Caminhoes> caminhoesLista = new ArrayList<>();
+
 
     public void adicionaCarro(Integer quantidadeRodas, Double pesoVeiculo, String cor, Integer ano, String marcaVeiculo, String modeloVeiculo, String novoUsado, Double valorVendaVeiculo) {
 
