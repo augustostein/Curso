@@ -37,6 +37,24 @@ public class VeiculoBuild {
         }
     }
 
+    public static Boolean verificaSeExisteAlgumVeiculoDaMarca(List<Veiculos> veiculos){
+        return veiculos.stream()
+                .allMatch(veiculo -> "Vw"
+                        .equals(veiculo.getMarca()));
+    }
+    public static Boolean verificaSeExisteAlgumVeiculoDaModelo(List<Veiculos> veiculos){
+        return veiculos.stream()
+                .allMatch(veiculo -> "Gol"
+                        .equals(veiculo.getModelo()));
+    }
+    public static Boolean verificaVeiculoJetta(List<Veiculos> veiculos){
+        return veiculos.stream()
+                .allMatch(veiculo -> "Jetta"
+                        .equals(veiculo.getModelo()));
+    }
+
+
+
     public void somaValoresVeiculos() {
 
         Double somaTotal = 0.0;
@@ -64,9 +82,6 @@ public class VeiculoBuild {
         return veiculos.stream()
                 .flatMap(veiculo -> Stream.of(veiculo, veiculo))
                 .collect(Collectors.toList());
-
-       // veiculosLista.stream()
-       // System.out.println(listaDuplicada);
 
     }
 

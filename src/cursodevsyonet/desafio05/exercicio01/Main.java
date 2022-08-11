@@ -15,6 +15,7 @@ public class Main {
 
         VeiculoBuild.adicionaVeiculo("VW", "Up", "ixi6969", "8ds8k14ys721dqsq7", 70.000);
         VeiculoBuild.adicionaVeiculo("VW", "Up", "IFJ2211", "6A2AAM569Jy9T0423", 54.000);
+        VeiculoBuild.adicionaVeiculo("VW", "Jetta", "IFJ2521", "6G8TQZ152Jr2D2378", 98.000);
         VeiculoBuild.adicionaVeiculo("VW", "Gol", "IFJ8641", "1jhCtzBvm5su01262", 60.000);
         VeiculoBuild.adicionaVeiculo("VW", "Gol", "IFJ5791", "7uN7fu7UsvyDu3205", 61.000);
         VeiculoBuild.adicionaVeiculo("VW", "Gol", "IFJ3311", "614KShAfEGUsy0509", 58.000);
@@ -26,13 +27,25 @@ public class Main {
 
 
 //        1. Dado um veículo com características como: (Marca, modelo, placa, chassi, valor), crie métodos que identifiquem se:
-//           Todos são da marca VW.
-//           Nenhum é modelo GOL.
-//           Algum é modelo JETTA.
+//          - Todos são da marca VW.
 
         VeiculoBuild.listaVeiculosMarca("VW");
 
+        System.out.println(VeiculoBuild.verificaSeExisteAlgumVeiculoDaMarca(veiculosLista));
+
+//        1. Dado um veículo com características como: (Marca, modelo, placa, chassi, valor), crie métodos que identifiquem se:
+//          - Nenhum é modelo GOL.
+
         VeiculoBuild.listaModeloVeiculo("Gol");
+
+        System.out.println(VeiculoBuild.verificaSeExisteAlgumVeiculoDaModelo(veiculosLista));
+
+//        1. Dado um veículo com características como: (Marca, modelo, placa, chassi, valor), crie métodos que identifiquem se:
+//           - Algum é modelo JETTA.
+
+        VeiculoBuild.listaModeloVeiculo("Jetta");
+
+        System.out.println(VeiculoBuild.verificaVeiculoJetta(veiculosLista));
 
 //-----------------------------------------------------------------------------------
 
