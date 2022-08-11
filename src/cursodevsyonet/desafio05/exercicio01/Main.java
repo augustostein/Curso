@@ -30,39 +30,39 @@ public class Main {
 //           Nenhum é modelo GOL.
 //           Algum é modelo JETTA.
 
-        //VeiculoBuild.listaVeiculosMarca("VW");
+        VeiculoBuild.listaVeiculosMarca("VW");
 
-        //VeiculoBuild.listaModeloVeiculo("Gol");
+        VeiculoBuild.listaModeloVeiculo("Gol");
 
 //-----------------------------------------------------------------------------------
 
 //        2. Utilizando o mesmo exemplo acima, crie um método que irá retornar a soma de todos os veículos da listagem criada anteriormente.
 
-        //VeiculoBuild.somaValoresVeiculos();
+        VeiculoBuild.somaValoresVeiculos();
 
 //-----------------------------------------------------------------------------------
 
 //        3. Crie um método que altere os veículos da lista setando todos com placa = "ABC1234".
 
-        //VeiculoBuild.ajustaPlacaVeiculos("ABC1234");
+        VeiculoBuild.ajustaPlacaVeiculos("ABC1234");
 
 //-----------------------------------------------------------------------------------
 
 //        4. Crie um método que duplique os veículos da lista.
 
-        //System.out.println(VeiculoBuild.listaDuplicada(veiculosLista));
+        System.out.println(VeiculoBuild.listaDuplicada(veiculosLista));
 
 //-----------------------------------------------------------------------------------
 
 //        5. Crie um método que retorne a lista de placa dos veículos.
 
-        //VeiculoBuild.listaPlacas();
+        VeiculoBuild.listaPlacas();
 
 //-----------------------------------------------------------------------------------
 
 //        6. Crie um método que ordene a listagem de veículos por valor, do maior ao menor.
 
-        //VeiculoBuild.ordenaPrecoVeiculos();
+        VeiculoBuild.ordenaPrecoVeiculos();
 
     }
 }
