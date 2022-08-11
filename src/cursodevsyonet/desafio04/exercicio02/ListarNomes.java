@@ -2,6 +2,7 @@ package cursodevsyonet.desafio04.exercicio02;
 
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -11,19 +12,9 @@ public class ListarNomes {
 
     public static void main(String[] args) {
 
-        List<String> nomes = new ArrayList<>();
+        List<String> nomes = Arrays.asList("Mateus", "Renan", "Jonathan", "Augusto", "Julian", "Betina","Gabriel",
+                "Louise", "Helio", "Tiago", "Amanda");
 
-        nomes.add("Mateus");
-        nomes.add("Renan");
-        nomes.add("Jonathan");
-        nomes.add("Augusto");
-        nomes.add("Julian");
-        nomes.add("Betina");
-        nomes.add("Gabriel");
-        nomes.add("Louise");
-        nomes.add("Helio");
-        nomes.add("Tiago");
-        nomes.add("Amanda");
 
         nomes = nomesListagem(nomes, 'A');
         nomes.forEach(System.out::println);

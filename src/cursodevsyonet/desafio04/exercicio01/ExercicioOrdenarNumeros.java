@@ -14,8 +14,8 @@ public class ExercicioOrdenarNumeros {
         numeros.stream().sorted().collect(Collectors.toList()).forEach(numero -> System.out.print(numero + ", "));
         // numeros.stream().sorted().collect(Collectors.toList()).forEach(numero -> System.out.println(numero));
 
-        // numeros.sort((a, b) -> a.compareTo(b));
-        // System.out.println(numeros);
+        //numeros.sort((a, b) -> a.compareTo(b));
+        //System.out.println(numeros);
     }
 }
 
